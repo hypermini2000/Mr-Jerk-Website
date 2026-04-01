@@ -56,3 +56,41 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 reveals.forEach(el => observer.observe(el));
+
+// Catering Form — Formspree submission
+const cateringForm = document.getElementById('cateringForm');
+const formStatus = document.getElementById('cateringFormStatus');
+
+if (cateringForm) {
+  cateringForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = cateringForm.querySelector('.form-submit');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    formStatus.textContent = '';
+
+    const data = new FormData(cateringForm);
+
+    try {
+      const res = await fetch('https://formspree.io/f/mrjerk-catering', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        formStatus.style.color = '#86efac';
+        formStatus.textContent = '\u2713 Request sent! We will contact you within 24 hours.';
+        cateringForm.reset();
+      } else {
+        throw new Error('Server error');
+      }
+    } catch (err) {
+      formStatus.style.color = '#fca5a5';
+      formStatus.textContent = 'Something went wrong. Please call us at 416-491-3593.';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Get My Custom Quote';
+    }
+  });
+}

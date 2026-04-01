@@ -10,6 +10,95 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- SEO: Local Business & Restaurant Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "@id": "https://mrjerk.ca/#restaurant",
+        "name": "Mr. Jerk",
+        "description": "Canada's original jerk destination since 1986. Authentic Jamaican cuisine featuring charcoal-grilled jerk chicken and jerk pork in North York, Toronto.",
+        "url": "https://mrjerk.ca",
+        "telephone": "+1-416-491-3593",
+        "email": "info@mrjerk.ca",
+        "servesCuisine": "Jamaican",
+        "priceRange": "$$",
+        "acceptsReservations": "False",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3050 Don Mills Rd N",
+          "addressLocality": "North York",
+          "addressRegion": "ON",
+          "postalCode": "M2J 3C1",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.7915,
+          "longitude": -79.3533
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "10:30",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "12:00",
+            "closes": "19:30"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/mrjerkpeanutplaza/",
+          "https://www.facebook.com/mrjerkdonmills/",
+          "https://www.tiktok.com/@mrjerkdonmills"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "363",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where is Mr. Jerk located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mr. Jerk is located inside the Peanut Plaza at 3050 Don Mills Rd N, North York, Ontario, right beside Pizza Pizza."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Mr. Jerk offer catering?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we offer authentic Jamaican catering for events ranging from 10 to 100 people. All catering is pickup only from our North York location."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is your jerk chicken cooked on real charcoal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We are one of the few remaining Jamaican restaurants in Ontario that still uses a real charcoal grill for our jerk chicken and jerk pork, just like we have since 1986."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -28,6 +117,7 @@
         <li><a href="#specials">Specials</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#contact">Find Us</a></li>
+        <li><a href="#catering">Catering</a></li>
         <li><a href="tel:4164913593" class="nav-cta">Order Now</a></li>
       </ul>
     </div>
@@ -250,6 +340,118 @@
     </div>
   </section>
 
+  <!-- Catering Section -->
+  <section class="section catering" id="catering">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label section-label--light">Toronto &amp; GTA</span>
+        <h2 class="section-title section-title--light">Catering for Every Event</h2>
+        <div class="divider divider--light">
+          <svg width="48" height="12" viewBox="0 0 48 12"><path d="M0 6 Q12 0 24 6 Q36 12 48 6" stroke="#F5C542" stroke-width="2" fill="none"/></svg>
+        </div>
+        <p class="catering-intro">From intimate birthday dinners to 100-person corporate events — Mr. Jerk brings charcoal-grilled jerk chicken, jerk pork, oxtail, and the full Jamaican experience to your event. Open since 1986.</p>
+        <p class="catering-note">Pickup only &middot; 3050 Don Mills Rd N &middot; Min. 10 people &middot; Max. 100 guests</p>
+      </div>
+
+      <div class="catering-grid reveal">
+        <div class="catering-why">
+          <h3>Why Choose Mr. Jerk Catering?</h3>
+          <div class="catering-features">
+            <div class="catering-feature">
+              <span class="catering-feature-icon">🔥</span>
+              <div>
+                <strong>Real Charcoal</strong>
+                <p>Every piece of jerk is cooked over real charcoal — not gas, not oven.</p>
+              </div>
+            </div>
+            <div class="catering-feature">
+              <span class="catering-feature-icon">📅</span>
+              <div>
+                <strong>40+ Years Experience</strong>
+                <p>Open since 1986. We've catered hundreds of events across the GTA.</p>
+              </div>
+            </div>
+            <div class="catering-feature">
+              <span class="catering-feature-icon">🍽️</span>
+              <div>
+                <strong>Fresh, Never Frozen</strong>
+                <p>All food is prepared fresh for your event. Everything is cooked to order.</p>
+              </div>
+            </div>
+            <div class="catering-feature">
+              <span class="catering-feature-icon">🌍</span>
+              <div>
+                <strong>Crowd Pleaser</strong>
+                <p>Jamaican food is universally loved. Always the highlight of any event spread.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catering-form-wrap">
+          <h3>Request a Catering Quote</h3>
+          <form class="catering-form" id="cateringForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cat_first_name">First Name *</label>
+                <input type="text" id="cat_first_name" name="first_name" class="form-control" required placeholder="Jane">
+              </div>
+              <div class="form-group">
+                <label for="cat_last_name">Last Name *</label>
+                <input type="text" id="cat_last_name" name="last_name" class="form-control" required placeholder="Smith">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cat_email">Email Address *</label>
+                <input type="email" id="cat_email" name="email" class="form-control" required placeholder="jane@email.com">
+              </div>
+              <div class="form-group">
+                <label for="cat_phone">Phone Number *</label>
+                <input type="tel" id="cat_phone" name="phone" class="form-control" required placeholder="416-555-0100">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cat_date">Event Date *</label>
+                <input type="date" id="cat_date" name="event_date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="cat_guests">Guest Count *</label>
+                <select id="cat_guests" name="guest_count" class="form-control" required>
+                  <option value="" disabled selected>Select...</option>
+                  <option value="10-20">10 – 20 Guests</option>
+                  <option value="21-40">21 – 40 Guests</option>
+                  <option value="41-70">41 – 70 Guests</option>
+                  <option value="71-100">71 – 100 Guests</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cat_event_type">Event Type</label>
+              <select id="cat_event_type" name="event_type" class="form-control">
+                <option value="" disabled selected>Select event type...</option>
+                <option value="Corporate">Corporate Event</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Birthday">Birthday Party</option>
+                <option value="Graduation">Graduation</option>
+                <option value="Family">Family Reunion</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cat_message">What are you looking for?</label>
+              <textarea id="cat_message" name="message" class="form-control" rows="3" placeholder="Tell us about your event and preferred menu items (e.g., Jerk Pork, Oxtail, Veggie options)..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Get My Custom Quote</button>
+            <p id="cateringFormStatus" class="form-status"></p>
+            <p class="form-fine-print">Pickup only at 3050 Don Mills Rd N. Minimum 10 people. We will contact you within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -264,6 +466,7 @@
           <li><a href="#about">Our Story</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#contact">Find Us</a></li>
+          <li><a href="#catering">Catering</a></li>
         </ul>
       </div>
       <div class="footer-contact">
